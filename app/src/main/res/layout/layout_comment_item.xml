@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10"
+    android:padding="4dp"
+    android:background="#656565"
+    >
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_account_circle_black_24dp"/>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_comment_name"
+            android:textSize="24sp"
+            android:text="Name"
+            android:textColor="#e8d0d9"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_comment_date"
+            android:textSize="16sp"
+            android:text="Date"
+            android:textColor="#e590a5"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating_bar"
+            android:numStars="5"
+            style="?attr/ratingBarStyleSmall"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:textColor="#eecd3b"
+            android:id="@+id/txt_comment"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

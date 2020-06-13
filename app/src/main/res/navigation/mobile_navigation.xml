@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pye.DisplayPage.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_services"
+        android:name="com.example.pye.DisplayPage.ui.services.servicesFragment"
+        android:label="@string/menu_services"
+        tools:layout="@layout/fragment_services" />
+
+    <fragment
+        android:id="@+id/nav_service_provider_details"
+        android:name="com.example.pye.DisplayPage.ui.serviceprovidersdetail.ServiceProvidersDetailFragment"
+        android:label="@string/menu_service_provider_details"
+        tools:layout="@layout/fragment_serviceproviderdetails" />
+
+    <fragment
+        android:id="@+id/nav_view_orders"
+        android:name="com.example.pye.DisplayPage.ui.view_orders.ViewOrderFragment"
+        android:label="@string/menu_view_orders"
+        tools:layout="@layout/fragment_view_order" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.pye.DisplayPage.ui.Cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_service_list"
+        android:name="com.example.pye.DisplayPage.ui.servicelist.ServiceListFragment"
+        android:label="@string/menu_service_list"
+        tools:layout="@layout/fragment_service_list" />
+</navigation>

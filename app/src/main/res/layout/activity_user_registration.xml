@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRegistration"
+    android:background="@android:color/transparent">
+
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:id="@+id/edt_id"
+        >
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_useremail"
+            android:hint="Email"
+            android:textColorHint="@android:color/black"
+            android:inputType="textEmailAddress"
+            android:text="shivamgupta8787@gmail.com"
+            android:textSize="25dp"
+            app:met_baseColor="@color/colorAccent"
+            app:met_primaryColor="@color/colorAccent"
+            android:textAlignment="center"
+            app:met_iconLeft="@drawable/ic_email_black_24dp"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_userpassword"
+            android:hint="Password"
+            android:textColorHint="@android:color/black"
+            android:inputType="textPassword"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:text="Shivam21"
+            app:met_maxCharacters="13"
+            app:met_baseColor="@color/colorAccent"
+            app:met_primaryColor="@color/colorAccent"
+            app:met_iconLeft="@drawable/ic_vpn_key_black_24dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/edt_id"
+        android:layout_above="@+id/layout_btns">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan your event on your own while sitting at home."
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/nabila"
+            android:textSize="25dp"
+            android:textStyle="italic"
+            android:layout_above="@+id/layout_btns"
+            android:layout_below="@+id/icon"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/slogan"
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_button_border1"
+            android:shadowColor="@android:color/black"
+            android:text="Sign In"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/layout_button_border"
+            android:shadowColor="@android:color/black"
+            android:text="Sign Up"
+            android:textColor="@color/colorAccent"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

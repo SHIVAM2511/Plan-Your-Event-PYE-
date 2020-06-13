@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:id="@+id/card_time_slot"
+    android:layout_height="200dp"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="#b8cbe1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@color/fui_transparent"
+            >
+
+            <TextView
+                android:id="@+id/text_time_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time Slot"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+
+                />
+
+            <TextView
+                android:id="@+id/text_time_slot_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Available"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
